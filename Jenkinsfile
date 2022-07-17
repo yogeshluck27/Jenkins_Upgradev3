@@ -3,7 +3,7 @@ pipeline {
       stages {
             stage('Init') {
                   steps {
-                        echo 'Hi, this is Yoges from LevelUp360'
+                        echo 'Hi, this is Yogesh from LevelUp360'
                         echo 'We are Starting the Testing'
                   }
             }
