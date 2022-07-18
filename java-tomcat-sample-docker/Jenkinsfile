@@ -1,9 +1,14 @@
 pipeline {
-    agent any
+    agent {
+     docker { 
+            image 'node:12.16.2'
+            args '-p 3000:3000'
+        } 
+    }
     tools { 
         maven 'myMaven' 
         jdk 'myJava' 
-        docker 'myDocker'
+      
 
     }
     stages {
