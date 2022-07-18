@@ -4,7 +4,7 @@ pipeline {
     tools { 
         maven 'myMaven' 
         jdk 'myJava' 
-        dockerToolbox 'myDocker'
+        dockerTool 'myDocker'
       
 
     }
