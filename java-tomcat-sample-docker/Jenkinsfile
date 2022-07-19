@@ -26,7 +26,7 @@ pipeline {
                 bat "cd"
                 bat "dir"
       
-                bat "docker build -f java-tomcat-sample-docker/Dockerfile -t tomcatsamplewebapp:latest"
+                bat "docker build ./java-tomcat-sample-docker -t tomcatsamplewebapp:latest"
             }
         }
 
