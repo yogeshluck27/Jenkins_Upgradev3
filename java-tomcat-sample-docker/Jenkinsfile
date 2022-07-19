@@ -25,7 +25,7 @@ pipeline {
             steps {
                 bat "cd"
                 bat "dir"
-      
+                bat "echo latest build no is %BUILD_NUMBER%"
                 bat "docker build ./java-tomcat-sample-docker -t tomcatsamplewebapp:latest"
             }
         }
