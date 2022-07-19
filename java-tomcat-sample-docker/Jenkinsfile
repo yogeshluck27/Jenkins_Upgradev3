@@ -26,6 +26,7 @@ pipeline {
                 bat "cd"
                 bat "dir"
                 bat "echo %path%"
+                  bat "docker info"
                 bat "docker build ./java-tomcat-sample-docker -t tomcatsamplewebapp:%env.BUILD_ID%"
             }
         }
